@@ -4,7 +4,7 @@ MinecraftServerSuite
 This is a set of server tools to make the Minecraft server run like a daemon/service on Ubuntu Linux and to be easier to maintain. This is meant to be an all in one solution for managing the files of a Minecraft server. It will install Minecraft and configure it to run as a service. 
 
 
-##Features##
+##Features
 
 There are many features that will make your job as an admin easier.
 
@@ -19,7 +19,8 @@ There are many features that will make your job as an admin easier.
  - Full Service Integration:
 	 - Control your Minecraft server just like any other linux [service][serviceGuide]
 
-##Setup##
+##Setup
+
 This requires that you have `screen`. If you do not, install it with `sudo apt-get install screen`.
 
  - You can download the files using the command `git clone https://github.com/AkBKukU/MinecraftServerSuite.git`. 
@@ -32,7 +33,8 @@ This requires that you have `screen`. If you do not, install it with `sudo apt-g
 
 That's all there is to the basic setup. 
 
-##Commands##
+##Commands
+
 The [service][serviceGuide] will accept the following commands: start, stop, status, restart, console. Run them like this `sudo service minecraftd start`
 
  - start:
