@@ -108,6 +108,31 @@ function autoUpdate ()
 	fi
 }
 
+# installService
+#
+# Installs only the Service for an existing minecraft server installation
+function installService()
+{
+
+	rootTest
+
+	getYesNo "This option will NOT install a Minecraft server, you will have to supply your own installation at $mcDir before continuing. Do you want to continue?"
+	
+	#Setup directory for server
+	if [ ! -d $mcDir && ! -f "$mcDir/server.properties"]
+	then
+		echo "Directory and crucial files don't exist, exiting."
+		exit 1
+	else
+		#Put management files in place
+		updatemcManager
+	
+		# Link server.properties to /etc
+		unlink /etc/minecraftd.conf
+		ln -s "$mcDir/server.properties" /etc/minecraftd.conf
+	fi
+}
+
 
 # installMinecraft
 # 
