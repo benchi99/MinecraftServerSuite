@@ -2,4 +2,4 @@
 
 echo Minecraft Server Starting
 cd /var/minecraftd
-screen -dmS minecraft-server java -Xms512M -Xmx1G -jar ./minecraft-server.jar
+screen -dmS minecraft-server ./run.sh

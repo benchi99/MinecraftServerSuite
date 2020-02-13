@@ -118,8 +118,8 @@ function installService()
 
 	getYesNo "This option will NOT install a Minecraft server, you will have to supply your own installation at $mcDir before continuing. Do you want to continue?"
 	
-	#Setup directory for server
-	if [ ! -d $mcDir && ! -f "$mcDir/server.properties"]
+	# Check if directory exists and contains server.properties file.
+	if [ ! -d $mcDir -a ! -f '$mcDir/server.properties' ]
 	then
 		echo "Directory and crucial files don't exist, exiting."
 		exit 1
@@ -410,6 +410,10 @@ case $1 in
 
 	'installMinecraft')
 		installMinecraft
+		;;
+
+	'installService')
+		installService
 		;;
 
 	'setOPS')
