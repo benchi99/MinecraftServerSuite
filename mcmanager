@@ -441,7 +441,7 @@ case $1 in
 		;;
 
 	*)
-	    echo "Usage: $0 {getNewLink|getNewestVersion|getCurrentVersion|checkForUpdate|autoUpdate|updateMinecraft|installMinecraft|setOPS|setMOTD|backupMinecraft|autoBackupMinecraft|status}" >&2
+	    echo "Usage: $0 {getNewLink|getNewestVersion|getCurrentVersion|checkForUpdate|autoUpdate|updateMinecraft|installMinecraft|installService|setOPS|setMOTD|backupMinecraft|autoBackupMinecraft|status}" >&2
 	    exit 3
 		;;
 esac

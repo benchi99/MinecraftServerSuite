@@ -49,10 +49,12 @@ The [service][serviceGuide] will accept the following commands: start, stop, sta
 	 - Brings you to the server console using screen. Exit the console by pressing `ctrl+a+d` (Note: There is an issue where you may not be able to access the console if the service was automatically started on boot. You can fix this by restarting the minecraftd service)
 
 
-The mcmanger has many useful commands. Most of them are self explanatory but here are descriptions of the ones you will be most likely to use:`
+The mcmanger has many useful commands. Most of them are self explanatory but here are descriptions of the ones you will be most likely to use:
 
  - installMinecraft:
 	 - Installs the Minecraft server like described in install instructions.
+ - installService: 
+	 - Installs only the service, providing that you already have a Minecraft server installed in the default location (`/var/minecraftd`).
  - checkForUpdate:
 	 - Checks if there is an update available for the server.
  - autoUpdate:
